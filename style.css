@@ -1,0 +1,169 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+  }
+
+  html {
+    --corPrimaria: #017143;
+    --corSecundaria: #333;
+    --corTerciaria: #fff;
+  }
+
+  main {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding:100px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: var(--corTerciaria);
+  }
+
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  header .Logo {
+    position: relative;
+    max-width: 80px;
+
+  }
+
+  header .Logo:hover {
+    filter: invert(0.1);
+  }
+
+  header ul {
+    position: relative;
+    display: flex;
+  }
+
+  header ul li {
+    list-style: none;
+  }
+
+  header ul li a {
+    display: inline-block;
+    color: var(--corSecundaria);
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 40px;
+
+  }
+
+  header ul li a:hover {
+    background-color: var(--corPrimaria);
+    color: var(--corTerciaria);
+    border-radius: 10px;
+
+  }
+
+  .conteudo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .conteudo .textoPrincipal {
+    position: relative;
+    max-width: 600px;
+  }
+
+  .conteudo .textoPrincipal h2 {
+    color: var(--corSecundaria);
+    font-size: 2.5em;
+    line-height: 1.5em;
+    font-weight: 5000;
+  }
+
+  .conteudo .textoPrincipal h2 span {
+    color: var(--corPrimaria);
+    font-size: 1.2em;
+    font-weight: 900;
+
+  }
+
+  .conteudo .textoPrincipal p {
+    color: var(--corSecundaria);
+
+  }
+
+  .conteudo .textoPrincipal a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: var(--corPrimaria);
+    color: var(--corTerciaria);
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+
+  .conteudo .textoPrincipal a:hover {
+    background: var(--corSecundaria);
+    color: var(--corTerciaria);
+  }
+
+  .conteudo .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+  }
+
+  .conteudo .imgBox img {
+    max-width: 340px;
+  }
+
+  .cafe {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    display: flex;
+  }
+
+  .cafes {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    display: flex;
+  }
+
+  .cafes li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .cafes li:hover {
+    transform: translateY(-15px);
+
+  }
+
+  .cafes li img {
+    max-width: 60px;
+  }
